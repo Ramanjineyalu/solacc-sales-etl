@@ -1,0 +1,16 @@
+[project]
+name = "solacc-sales-etl"
+version = "1.0.0"
+description = "Sales ETL solution accelerator (bronze, silver, gold) for Databricks"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+# Globals that Databricks injects into every notebook
+builtins = ["spark", "dbutils", "display", "displayHTML", "sc"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]   # style errors, pyflakes, import sorting
+ignore = [
+    "E402",   # imports after %run cells are normal in notebooks
+]
