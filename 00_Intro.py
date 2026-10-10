@@ -55,7 +55,6 @@
 
 # COMMAND ----------
 
-%run ./config/notebook_config
 
 print(f"User:     {username}")
 print(f"Catalog:  {catalog}")
