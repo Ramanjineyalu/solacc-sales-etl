@@ -10,8 +10,6 @@
 
 # COMMAND ----------
 
-%run ./config/notebook_config
-
 
 import csv, os, random
 from datetime import date, timedelta
