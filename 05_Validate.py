@@ -8,7 +8,6 @@
 
 # COMMAND ----------
 
-%run ./config/notebook_config
 
 silver = spark.table("silver_sales")
 rejected = spark.table("silver_sales_rejected")
